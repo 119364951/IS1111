@@ -1,0 +1,13 @@
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\bin\Debug\ProjectIS1111.exe.config
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\bin\Debug\ProjectIS1111.exe
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\bin\Debug\ProjectIS1111.pdb
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\bin\Debug\ProjectIS1111.xml
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.vbprojAssemblyReference.cache
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.frmCustomisationPage.resources
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.frmStart.resources
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.Resources.resources
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.vbproj.GenerateResource.cache
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.vbproj.CoreCompileInputs.cache
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.exe
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.xml
+C:\Users\Enginseer Blucher\Desktop\IS1111\ProjectIS1111\ProjectIS1111\obj\Debug\ProjectIS1111.pdb
