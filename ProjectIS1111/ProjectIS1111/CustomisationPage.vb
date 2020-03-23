@@ -4,4 +4,8 @@
         Me.TblBaseItemTableAdapter.Fill(Me.CustomerdtbDataSet.tblBaseItem)
 
     End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+
+    End Sub
 End Class
