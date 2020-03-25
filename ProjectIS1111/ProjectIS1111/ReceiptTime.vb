@@ -1,5 +1,5 @@
 ﻿Public Class ReceiptTime
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) 
 
     End Sub
 End Class
