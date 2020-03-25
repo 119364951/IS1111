@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmCustomisationPage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmCustomisationPage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnPrint = New System.Windows.Forms.Button()
@@ -30,8 +30,10 @@ Partial Class frmCustomisationPage
         Me.grpSelection = New System.Windows.Forms.GroupBox()
         Me.grpCustomCom = New System.Windows.Forms.GroupBox()
         Me.grpText = New System.Windows.Forms.GroupBox()
+        Me.lblAddChar = New System.Windows.Forms.Label()
+        Me.lblBaseChar = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtText = New System.Windows.Forms.TextBox()
         Me.chkLaces = New System.Windows.Forms.CheckBox()
         Me.chkHeelBackCounter = New System.Windows.Forms.CheckBox()
         Me.chkHeelTab = New System.Windows.Forms.CheckBox()
@@ -61,10 +63,24 @@ Partial Class frmCustomisationPage
         Me.grpCost = New System.Windows.Forms.GroupBox()
         Me.c = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.lblBaseChar = New System.Windows.Forms.Label()
-        Me.lblAddChar = New System.Windows.Forms.Label()
-        Me.btn = New System.Windows.Forms.Button()
+        Me.btnCustomise = New System.Windows.Forms.Button()
+        Me.btnPay = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblSize = New System.Windows.Forms.Label()
+        Me.txtSize = New System.Windows.Forms.TextBox()
+        Me.grpCusDetails = New System.Windows.Forms.GroupBox()
+        Me.lblOrderID = New System.Windows.Forms.Label()
+        Me.txtOrderID = New System.Windows.Forms.TextBox()
+        Me.lblFName = New System.Windows.Forms.Label()
+        Me.txtForeName = New System.Windows.Forms.TextBox()
+        Me.lblStreetAdd = New System.Windows.Forms.Label()
+        Me.txtStreetAdd = New System.Windows.Forms.TextBox()
+        Me.frmQuantity = New System.Windows.Forms.Label()
+        Me.mtbQuantity = New System.Windows.Forms.MaskedTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.mtbPhoneNo = New System.Windows.Forms.MaskedTextBox()
+        Me.txtSurname = New System.Windows.Forms.TextBox()
+        Me.lblSurname = New System.Windows.Forms.Label()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerdtbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpSelection.SuspendLayout()
@@ -73,11 +89,12 @@ Partial Class frmCustomisationPage
         Me.grpBaseItem.SuspendLayout()
         Me.grpPayment.SuspendLayout()
         Me.grpCost.SuspendLayout()
+        Me.grpCusDetails.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnPrint
         '
-        Me.btnPrint.Location = New System.Drawing.Point(579, 352)
+        Me.btnPrint.Location = New System.Drawing.Point(603, 352)
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(75, 23)
         Me.btnPrint.TabIndex = 5
@@ -102,7 +119,7 @@ Partial Class frmCustomisationPage
         '
         Me.grpSelection.Controls.Add(Me.grpCustomCom)
         Me.grpSelection.Controls.Add(Me.grpBaseItem)
-        Me.grpSelection.Location = New System.Drawing.Point(28, 22)
+        Me.grpSelection.Location = New System.Drawing.Point(229, 25)
         Me.grpSelection.Name = "grpSelection"
         Me.grpSelection.Size = New System.Drawing.Size(626, 244)
         Me.grpSelection.TabIndex = 9
@@ -133,17 +150,35 @@ Partial Class frmCustomisationPage
         '
         'grpText
         '
-        Me.grpText.Controls.Add(Me.btn)
+        Me.grpText.Controls.Add(Me.btnPay)
         Me.grpText.Controls.Add(Me.lblAddChar)
         Me.grpText.Controls.Add(Me.lblBaseChar)
         Me.grpText.Controls.Add(Me.Label1)
-        Me.grpText.Controls.Add(Me.TextBox2)
+        Me.grpText.Controls.Add(Me.txtText)
         Me.grpText.Location = New System.Drawing.Point(6, 137)
         Me.grpText.Name = "grpText"
         Me.grpText.Size = New System.Drawing.Size(420, 76)
         Me.grpText.TabIndex = 12
         Me.grpText.TabStop = False
         Me.grpText.Text = "Text:"
+        '
+        'lblAddChar
+        '
+        Me.lblAddChar.AutoSize = True
+        Me.lblAddChar.Location = New System.Drawing.Point(239, 51)
+        Me.lblAddChar.Name = "lblAddChar"
+        Me.lblAddChar.Size = New System.Drawing.Size(142, 13)
+        Me.lblAddChar.TabIndex = 3
+        Me.lblAddChar.Text = "€0.05 per additional charcter"
+        '
+        'lblBaseChar
+        '
+        Me.lblBaseChar.AutoSize = True
+        Me.lblBaseChar.Location = New System.Drawing.Point(239, 23)
+        Me.lblBaseChar.Name = "lblBaseChar"
+        Me.lblBaseChar.Size = New System.Drawing.Size(142, 13)
+        Me.lblBaseChar.TabIndex = 2
+        Me.lblBaseChar.Text = "€0.45 per character up to 10"
         '
         'Label1
         '
@@ -153,12 +188,12 @@ Partial Class frmCustomisationPage
         Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 1
         '
-        'TextBox2
+        'txtText
         '
-        Me.TextBox2.Location = New System.Drawing.Point(17, 20)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox2.TabIndex = 0
+        Me.txtText.Location = New System.Drawing.Point(17, 20)
+        Me.txtText.Name = "txtText"
+        Me.txtText.Size = New System.Drawing.Size(202, 20)
+        Me.txtText.TabIndex = 0
         '
         'chkLaces
         '
@@ -193,18 +228,20 @@ Partial Class frmCustomisationPage
         'lblLaces
         '
         Me.lblLaces.AutoSize = True
-        Me.lblLaces.Location = New System.Drawing.Point(169, 109)
+        Me.lblLaces.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLaces.Location = New System.Drawing.Point(152, 109)
         Me.lblLaces.Name = "lblLaces"
-        Me.lblLaces.Size = New System.Drawing.Size(39, 13)
+        Me.lblLaces.Size = New System.Drawing.Size(45, 13)
         Me.lblLaces.TabIndex = 8
         Me.lblLaces.Text = "Laces:"
         '
         'lblHeelBackCouter
         '
         Me.lblHeelBackCouter.AutoSize = True
-        Me.lblHeelBackCouter.Location = New System.Drawing.Point(169, 73)
+        Me.lblHeelBackCouter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeelBackCouter.Location = New System.Drawing.Point(152, 73)
         Me.lblHeelBackCouter.Name = "lblHeelBackCouter"
-        Me.lblHeelBackCouter.Size = New System.Drawing.Size(102, 13)
+        Me.lblHeelBackCouter.Size = New System.Drawing.Size(120, 13)
         Me.lblHeelBackCouter.TabIndex = 7
         Me.lblHeelBackCouter.Text = "Heel/Back Counter:"
         '
@@ -241,41 +278,49 @@ Partial Class frmCustomisationPage
         'lblHeelTab
         '
         Me.lblHeelTab.AutoSize = True
-        Me.lblHeelTab.Location = New System.Drawing.Point(169, 39)
+        Me.lblHeelTab.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeelTab.Location = New System.Drawing.Point(152, 39)
         Me.lblHeelTab.Name = "lblHeelTab"
-        Me.lblHeelTab.Size = New System.Drawing.Size(56, 13)
+        Me.lblHeelTab.Size = New System.Drawing.Size(65, 13)
         Me.lblHeelTab.TabIndex = 3
         Me.lblHeelTab.Text = "Heel/Tab:"
         '
         'lblEyestay
         '
         Me.lblEyestay.AutoSize = True
-        Me.lblEyestay.Location = New System.Drawing.Point(20, 109)
+        Me.lblEyestay.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEyestay.Location = New System.Drawing.Point(17, 108)
         Me.lblEyestay.Name = "lblEyestay"
-        Me.lblEyestay.Size = New System.Drawing.Size(47, 13)
+        Me.lblEyestay.Size = New System.Drawing.Size(55, 13)
         Me.lblEyestay.TabIndex = 2
         Me.lblEyestay.Text = "Eyestay:"
         '
         'lblVamp
         '
         Me.lblVamp.AutoSize = True
-        Me.lblVamp.Location = New System.Drawing.Point(20, 74)
+        Me.lblVamp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVamp.Location = New System.Drawing.Point(17, 73)
         Me.lblVamp.Name = "lblVamp"
-        Me.lblVamp.Size = New System.Drawing.Size(37, 13)
+        Me.lblVamp.Size = New System.Drawing.Size(42, 13)
         Me.lblVamp.TabIndex = 1
         Me.lblVamp.Text = "Vamp:"
         '
         'lblQuarter
         '
         Me.lblQuarter.AutoSize = True
-        Me.lblQuarter.Location = New System.Drawing.Point(20, 39)
+        Me.lblQuarter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuarter.Location = New System.Drawing.Point(17, 38)
         Me.lblQuarter.Name = "lblQuarter"
-        Me.lblQuarter.Size = New System.Drawing.Size(45, 13)
+        Me.lblQuarter.Size = New System.Drawing.Size(53, 13)
         Me.lblQuarter.TabIndex = 0
         Me.lblQuarter.Text = "Quarter:"
         '
         'grpBaseItem
         '
+        Me.grpBaseItem.Controls.Add(Me.mtbQuantity)
+        Me.grpBaseItem.Controls.Add(Me.frmQuantity)
+        Me.grpBaseItem.Controls.Add(Me.txtSize)
+        Me.grpBaseItem.Controls.Add(Me.lblSize)
         Me.grpBaseItem.Controls.Add(Me.rdoRetro)
         Me.grpBaseItem.Controls.Add(Me.rdoVintage)
         Me.grpBaseItem.Controls.Add(Me.rdoClassic)
@@ -325,27 +370,30 @@ Partial Class frmCustomisationPage
         'lblVintage
         '
         Me.lblVintage.AutoSize = True
+        Me.lblVintage.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblVintage.Location = New System.Drawing.Point(13, 109)
         Me.lblVintage.Name = "lblVintage"
-        Me.lblVintage.Size = New System.Drawing.Size(46, 13)
+        Me.lblVintage.Size = New System.Drawing.Size(54, 13)
         Me.lblVintage.TabIndex = 5
         Me.lblVintage.Text = "Vintage:"
         '
         'lblRetro
         '
         Me.lblRetro.AutoSize = True
+        Me.lblRetro.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRetro.Location = New System.Drawing.Point(13, 74)
         Me.lblRetro.Name = "lblRetro"
-        Me.lblRetro.Size = New System.Drawing.Size(36, 13)
+        Me.lblRetro.Size = New System.Drawing.Size(42, 13)
         Me.lblRetro.TabIndex = 4
         Me.lblRetro.Text = "Retro:"
         '
         'lblClassic
         '
         Me.lblClassic.AutoSize = True
+        Me.lblClassic.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblClassic.Location = New System.Drawing.Point(13, 39)
         Me.lblClassic.Name = "lblClassic"
-        Me.lblClassic.Size = New System.Drawing.Size(43, 13)
+        Me.lblClassic.Size = New System.Drawing.Size(51, 13)
         Me.lblClassic.TabIndex = 3
         Me.lblClassic.Text = "Classic:"
         '
@@ -359,14 +407,14 @@ Partial Class frmCustomisationPage
         Me.grpPayment.Controls.Add(Me.rdoCredit)
         Me.grpPayment.Location = New System.Drawing.Point(28, 275)
         Me.grpPayment.Name = "grpPayment"
-        Me.grpPayment.Size = New System.Drawing.Size(394, 108)
+        Me.grpPayment.Size = New System.Drawing.Size(356, 108)
         Me.grpPayment.TabIndex = 10
         Me.grpPayment.TabStop = False
         Me.grpPayment.Text = "Payment Option:"
         '
         'mtbNumber
         '
-        Me.mtbNumber.Location = New System.Drawing.Point(157, 57)
+        Me.mtbNumber.Location = New System.Drawing.Point(143, 58)
         Me.mtbNumber.Mask = "000"
         Me.mtbNumber.Name = "mtbNumber"
         Me.mtbNumber.Size = New System.Drawing.Size(25, 20)
@@ -375,7 +423,7 @@ Partial Class frmCustomisationPage
         '
         'mtbExDate
         '
-        Me.mtbExDate.Location = New System.Drawing.Point(264, 57)
+        Me.mtbExDate.Location = New System.Drawing.Point(250, 58)
         Me.mtbExDate.Mask = "00/00/0000"
         Me.mtbExDate.Name = "mtbExDate"
         Me.mtbExDate.Size = New System.Drawing.Size(68, 20)
@@ -385,7 +433,7 @@ Partial Class frmCustomisationPage
         'lblExpDate
         '
         Me.lblExpDate.AutoSize = True
-        Me.lblExpDate.Location = New System.Drawing.Point(194, 60)
+        Me.lblExpDate.Location = New System.Drawing.Point(180, 61)
         Me.lblExpDate.Name = "lblExpDate"
         Me.lblExpDate.Size = New System.Drawing.Size(64, 13)
         Me.lblExpDate.TabIndex = 4
@@ -394,7 +442,7 @@ Partial Class frmCustomisationPage
         'lblSecNum
         '
         Me.lblSecNum.AutoSize = True
-        Me.lblSecNum.Location = New System.Drawing.Point(63, 60)
+        Me.lblSecNum.Location = New System.Drawing.Point(49, 61)
         Me.lblSecNum.Name = "lblSecNum"
         Me.lblSecNum.Size = New System.Drawing.Size(88, 13)
         Me.lblSecNum.TabIndex = 2
@@ -403,7 +451,7 @@ Partial Class frmCustomisationPage
         'rdoDebit
         '
         Me.rdoDebit.AutoSize = True
-        Me.rdoDebit.Location = New System.Drawing.Point(197, 31)
+        Me.rdoDebit.Location = New System.Drawing.Point(183, 32)
         Me.rdoDebit.Name = "rdoDebit"
         Me.rdoDebit.Size = New System.Drawing.Size(75, 17)
         Me.rdoDebit.TabIndex = 1
@@ -414,7 +462,7 @@ Partial Class frmCustomisationPage
         'rdoCredit
         '
         Me.rdoCredit.AutoSize = True
-        Me.rdoCredit.Location = New System.Drawing.Point(66, 31)
+        Me.rdoCredit.Location = New System.Drawing.Point(52, 32)
         Me.rdoCredit.Name = "rdoCredit"
         Me.rdoCredit.Size = New System.Drawing.Size(77, 17)
         Me.rdoCredit.TabIndex = 0
@@ -424,73 +472,201 @@ Partial Class frmCustomisationPage
         '
         'grpCost
         '
+        Me.grpCost.Controls.Add(Me.Label2)
         Me.grpCost.Controls.Add(Me.c)
         Me.grpCost.Controls.Add(Me.btnCalculate)
-        Me.grpCost.Location = New System.Drawing.Point(429, 275)
+        Me.grpCost.Location = New System.Drawing.Point(390, 275)
         Me.grpCost.Name = "grpCost"
-        Me.grpCost.Size = New System.Drawing.Size(144, 108)
+        Me.grpCost.Size = New System.Drawing.Size(183, 108)
         Me.grpCost.TabIndex = 11
         Me.grpCost.TabStop = False
         Me.grpCost.Text = "Cost:"
         '
         'c
         '
-        Me.c.Location = New System.Drawing.Point(24, 30)
+        Me.c.Location = New System.Drawing.Point(10, 31)
         Me.c.Name = "c"
         Me.c.Size = New System.Drawing.Size(100, 20)
         Me.c.TabIndex = 7
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(35, 77)
+        Me.btnCalculate.Location = New System.Drawing.Point(54, 77)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
         Me.btnCalculate.TabIndex = 6
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
-        'btnReset
+        'btnCustomise
         '
-        Me.btnReset.Location = New System.Drawing.Point(579, 285)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnReset.TabIndex = 12
-        Me.btnReset.Text = "Reset"
-        Me.btnReset.UseVisualStyleBackColor = True
+        Me.btnCustomise.Location = New System.Drawing.Point(120, 192)
+        Me.btnCustomise.Name = "btnCustomise"
+        Me.btnCustomise.Size = New System.Drawing.Size(69, 23)
+        Me.btnCustomise.TabIndex = 12
+        Me.btnCustomise.Text = "Customise"
+        Me.btnCustomise.UseVisualStyleBackColor = True
         '
-        'lblBaseChar
+        'btnPay
         '
-        Me.lblBaseChar.AutoSize = True
-        Me.lblBaseChar.Location = New System.Drawing.Point(239, 23)
-        Me.lblBaseChar.Name = "lblBaseChar"
-        Me.lblBaseChar.Size = New System.Drawing.Size(142, 13)
-        Me.lblBaseChar.TabIndex = 2
-        Me.lblBaseChar.Text = "€0.45 per character up to 10"
+        Me.btnPay.Location = New System.Drawing.Point(81, 46)
+        Me.btnPay.Name = "btnPay"
+        Me.btnPay.Size = New System.Drawing.Size(75, 23)
+        Me.btnPay.TabIndex = 13
+        Me.btnPay.Text = "Pay"
+        Me.btnPay.UseVisualStyleBackColor = True
         '
-        'lblAddChar
+        'Label2
         '
-        Me.lblAddChar.AutoSize = True
-        Me.lblAddChar.Location = New System.Drawing.Point(239, 51)
-        Me.lblAddChar.Name = "lblAddChar"
-        Me.lblAddChar.Size = New System.Drawing.Size(142, 13)
-        Me.lblAddChar.TabIndex = 3
-        Me.lblAddChar.Text = "€0.05 per additional charcter"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(120, 33)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "+23% VAT"
         '
-        'btn
+        'lblSize
         '
-        Me.btn.Location = New System.Drawing.Point(81, 46)
-        Me.btn.Name = "btn"
-        Me.btn.Size = New System.Drawing.Size(75, 23)
-        Me.btn.TabIndex = 4
-        Me.btn.Text = "Button1"
-        Me.btn.UseVisualStyleBackColor = True
+        Me.lblSize.AutoSize = True
+        Me.lblSize.Location = New System.Drawing.Point(13, 137)
+        Me.lblSize.Name = "lblSize"
+        Me.lblSize.Size = New System.Drawing.Size(58, 13)
+        Me.lblSize.TabIndex = 9
+        Me.lblSize.Text = "Shoe Size:"
+        '
+        'txtSize
+        '
+        Me.txtSize.Location = New System.Drawing.Point(16, 153)
+        Me.txtSize.Name = "txtSize"
+        Me.txtSize.Size = New System.Drawing.Size(100, 20)
+        Me.txtSize.TabIndex = 10
+        '
+        'grpCusDetails
+        '
+        Me.grpCusDetails.Controls.Add(Me.lblSurname)
+        Me.grpCusDetails.Controls.Add(Me.btnCustomise)
+        Me.grpCusDetails.Controls.Add(Me.txtSurname)
+        Me.grpCusDetails.Controls.Add(Me.mtbPhoneNo)
+        Me.grpCusDetails.Controls.Add(Me.Label3)
+        Me.grpCusDetails.Controls.Add(Me.txtStreetAdd)
+        Me.grpCusDetails.Controls.Add(Me.lblStreetAdd)
+        Me.grpCusDetails.Controls.Add(Me.txtForeName)
+        Me.grpCusDetails.Controls.Add(Me.lblFName)
+        Me.grpCusDetails.Controls.Add(Me.txtOrderID)
+        Me.grpCusDetails.Controls.Add(Me.lblOrderID)
+        Me.grpCusDetails.Location = New System.Drawing.Point(28, 25)
+        Me.grpCusDetails.Name = "grpCusDetails"
+        Me.grpCusDetails.Size = New System.Drawing.Size(195, 244)
+        Me.grpCusDetails.TabIndex = 13
+        Me.grpCusDetails.TabStop = False
+        Me.grpCusDetails.Text = "Customer Details:"
+        '
+        'lblOrderID
+        '
+        Me.lblOrderID.AutoSize = True
+        Me.lblOrderID.Location = New System.Drawing.Point(7, 20)
+        Me.lblOrderID.Name = "lblOrderID"
+        Me.lblOrderID.Size = New System.Drawing.Size(50, 13)
+        Me.lblOrderID.TabIndex = 0
+        Me.lblOrderID.Text = "Order ID:"
+        '
+        'txtOrderID
+        '
+        Me.txtOrderID.Location = New System.Drawing.Point(7, 37)
+        Me.txtOrderID.Name = "txtOrderID"
+        Me.txtOrderID.ReadOnly = True
+        Me.txtOrderID.Size = New System.Drawing.Size(100, 20)
+        Me.txtOrderID.TabIndex = 1
+        '
+        'lblFName
+        '
+        Me.lblFName.AutoSize = True
+        Me.lblFName.Location = New System.Drawing.Point(6, 73)
+        Me.lblFName.Name = "lblFName"
+        Me.lblFName.Size = New System.Drawing.Size(62, 13)
+        Me.lblFName.TabIndex = 2
+        Me.lblFName.Text = "Fore Name:"
+        '
+        'txtForeName
+        '
+        Me.txtForeName.Location = New System.Drawing.Point(7, 89)
+        Me.txtForeName.Name = "txtForeName"
+        Me.txtForeName.Size = New System.Drawing.Size(87, 20)
+        Me.txtForeName.TabIndex = 3
+        '
+        'lblStreetAdd
+        '
+        Me.lblStreetAdd.AutoSize = True
+        Me.lblStreetAdd.Location = New System.Drawing.Point(10, 126)
+        Me.lblStreetAdd.Name = "lblStreetAdd"
+        Me.lblStreetAdd.Size = New System.Drawing.Size(79, 13)
+        Me.lblStreetAdd.TabIndex = 4
+        Me.lblStreetAdd.Text = "Street Address:"
+        '
+        'txtStreetAdd
+        '
+        Me.txtStreetAdd.Location = New System.Drawing.Point(7, 143)
+        Me.txtStreetAdd.Name = "txtStreetAdd"
+        Me.txtStreetAdd.Size = New System.Drawing.Size(182, 20)
+        Me.txtStreetAdd.TabIndex = 5
+        '
+        'frmQuantity
+        '
+        Me.frmQuantity.AutoSize = True
+        Me.frmQuantity.Location = New System.Drawing.Point(16, 189)
+        Me.frmQuantity.Name = "frmQuantity"
+        Me.frmQuantity.Size = New System.Drawing.Size(49, 13)
+        Me.frmQuantity.TabIndex = 12
+        Me.frmQuantity.Text = "Quantity:"
+        '
+        'mtbQuantity
+        '
+        Me.mtbQuantity.Location = New System.Drawing.Point(66, 185)
+        Me.mtbQuantity.Mask = "0000"
+        Me.mtbQuantity.Name = "mtbQuantity"
+        Me.mtbQuantity.Size = New System.Drawing.Size(32, 20)
+        Me.mtbQuantity.TabIndex = 13
+        Me.mtbQuantity.ValidatingType = GetType(Integer)
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 179)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Phone Number:"
+        '
+        'mtbPhoneNo
+        '
+        Me.mtbPhoneNo.Location = New System.Drawing.Point(7, 195)
+        Me.mtbPhoneNo.Mask = "(999) 000-0000"
+        Me.mtbPhoneNo.Name = "mtbPhoneNo"
+        Me.mtbPhoneNo.Size = New System.Drawing.Size(100, 20)
+        Me.mtbPhoneNo.TabIndex = 7
+        '
+        'txtSurname
+        '
+        Me.txtSurname.Location = New System.Drawing.Point(102, 89)
+        Me.txtSurname.Name = "txtSurname"
+        Me.txtSurname.Size = New System.Drawing.Size(87, 20)
+        Me.txtSurname.TabIndex = 8
+        '
+        'lblSurname
+        '
+        Me.lblSurname.AutoSize = True
+        Me.lblSurname.Location = New System.Drawing.Point(99, 73)
+        Me.lblSurname.Name = "lblSurname"
+        Me.lblSurname.Size = New System.Drawing.Size(52, 13)
+        Me.lblSurname.TabIndex = 9
+        Me.lblSurname.Text = "Surname:"
         '
         'frmCustomisationPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(666, 395)
-        Me.Controls.Add(Me.btnReset)
+        Me.ClientSize = New System.Drawing.Size(885, 412)
+        Me.Controls.Add(Me.grpCusDetails)
         Me.Controls.Add(Me.grpCost)
         Me.Controls.Add(Me.grpPayment)
         Me.Controls.Add(Me.grpSelection)
@@ -510,6 +686,8 @@ Partial Class frmCustomisationPage
         Me.grpPayment.PerformLayout()
         Me.grpCost.ResumeLayout(False)
         Me.grpCost.PerformLayout()
+        Me.grpCusDetails.ResumeLayout(False)
+        Me.grpCusDetails.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -529,7 +707,7 @@ Partial Class frmCustomisationPage
     Friend WithEvents grpCost As GroupBox
     Friend WithEvents c As TextBox
     Friend WithEvents btnCalculate As Button
-    Friend WithEvents btnReset As Button
+    Friend WithEvents btnCustomise As Button
     Friend WithEvents lblVintage As Label
     Friend WithEvents lblRetro As Label
     Friend WithEvents lblClassic As Label
@@ -547,12 +725,28 @@ Partial Class frmCustomisationPage
     Friend WithEvents chkLaces As CheckBox
     Friend WithEvents chkHeelBackCounter As CheckBox
     Friend WithEvents grpText As GroupBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtText As TextBox
     Friend WithEvents rdoRetro As RadioButton
     Friend WithEvents rdoVintage As RadioButton
     Friend WithEvents rdoClassic As RadioButton
     Friend WithEvents Label1 As Label
     Friend WithEvents lblBaseChar As Label
     Friend WithEvents lblAddChar As Label
-    Friend WithEvents btn As Button
+    Friend WithEvents btnPay As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtSize As TextBox
+    Friend WithEvents lblSize As Label
+    Friend WithEvents grpCusDetails As GroupBox
+    Friend WithEvents txtOrderID As TextBox
+    Friend WithEvents lblOrderID As Label
+    Friend WithEvents txtForeName As TextBox
+    Friend WithEvents lblFName As Label
+    Friend WithEvents frmQuantity As Label
+    Friend WithEvents txtStreetAdd As TextBox
+    Friend WithEvents lblStreetAdd As Label
+    Friend WithEvents mtbQuantity As MaskedTextBox
+    Friend WithEvents txtSurname As TextBox
+    Friend WithEvents mtbPhoneNo As MaskedTextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblSurname As Label
 End Class

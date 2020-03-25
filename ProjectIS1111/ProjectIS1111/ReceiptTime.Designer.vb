@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class ReceiptTime
+Partial Class frmReceiptTime
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,12 +24,12 @@ Partial Class ReceiptTime
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'ReceiptTime
+        'frmReceiptTime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(677, 694)
-        Me.Name = "ReceiptTime"
+        Me.Name = "frmReceiptTime"
         Me.Text = "ReceiptTime"
         Me.ResumeLayout(False)
 
