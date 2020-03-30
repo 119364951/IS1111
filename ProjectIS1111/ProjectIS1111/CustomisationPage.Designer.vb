@@ -22,6 +22,7 @@ Partial Class frmCustomisationPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCustomisationPage))
         Me.btnPrint = New System.Windows.Forms.Button()
         Me.grpSelection = New System.Windows.Forms.GroupBox()
         Me.grpCustomCom = New System.Windows.Forms.GroupBox()
@@ -55,6 +56,8 @@ Partial Class frmCustomisationPage
         Me.lblRetro = New System.Windows.Forms.Label()
         Me.lblClassic = New System.Windows.Forms.Label()
         Me.grpPayment = New System.Windows.Forms.GroupBox()
+        Me.mtbDate = New System.Windows.Forms.MaskedTextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.mtbNumber = New System.Windows.Forms.MaskedTextBox()
         Me.mtbExDate = New System.Windows.Forms.MaskedTextBox()
         Me.lblExpDate = New System.Windows.Forms.Label()
@@ -77,8 +80,6 @@ Partial Class frmCustomisationPage
         Me.lblFName = New System.Windows.Forms.Label()
         Me.txtOrderID = New System.Windows.Forms.TextBox()
         Me.lblOrderID = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.mtbDate = New System.Windows.Forms.MaskedTextBox()
         Me.grpSelection.SuspendLayout()
         Me.grpCustomCom.SuspendLayout()
         Me.grpText.SuspendLayout()
@@ -90,6 +91,7 @@ Partial Class frmCustomisationPage
         '
         'btnPrint
         '
+        Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnPrint.Location = New System.Drawing.Point(102, 77)
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(75, 23)
@@ -99,9 +101,11 @@ Partial Class frmCustomisationPage
         '
         'grpSelection
         '
+        Me.grpSelection.BackColor = System.Drawing.Color.Transparent
         Me.grpSelection.Controls.Add(Me.grpCustomCom)
         Me.grpSelection.Controls.Add(Me.grpBaseItem)
-        Me.grpSelection.Location = New System.Drawing.Point(229, 25)
+        Me.grpSelection.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.grpSelection.Location = New System.Drawing.Point(236, 66)
         Me.grpSelection.Name = "grpSelection"
         Me.grpSelection.Size = New System.Drawing.Size(626, 244)
         Me.grpSelection.TabIndex = 9
@@ -146,6 +150,7 @@ Partial Class frmCustomisationPage
         '
         'btnPay
         '
+        Me.btnPay.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnPay.Location = New System.Drawing.Point(81, 46)
         Me.btnPay.Name = "btnPay"
         Me.btnPay.Size = New System.Drawing.Size(75, 23)
@@ -156,6 +161,7 @@ Partial Class frmCustomisationPage
         'lblAddChar
         '
         Me.lblAddChar.AutoSize = True
+        Me.lblAddChar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblAddChar.Location = New System.Drawing.Point(239, 51)
         Me.lblAddChar.Name = "lblAddChar"
         Me.lblAddChar.Size = New System.Drawing.Size(142, 13)
@@ -165,6 +171,7 @@ Partial Class frmCustomisationPage
         'lblBaseChar
         '
         Me.lblBaseChar.AutoSize = True
+        Me.lblBaseChar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblBaseChar.Location = New System.Drawing.Point(239, 23)
         Me.lblBaseChar.Name = "lblBaseChar"
         Me.lblBaseChar.Size = New System.Drawing.Size(142, 13)
@@ -174,6 +181,7 @@ Partial Class frmCustomisationPage
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.Label1.Location = New System.Drawing.Point(191, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(0, 13)
@@ -181,6 +189,7 @@ Partial Class frmCustomisationPage
         '
         'txtText
         '
+        Me.txtText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtText.Location = New System.Drawing.Point(17, 20)
         Me.txtText.Name = "txtText"
         Me.txtText.Size = New System.Drawing.Size(202, 20)
@@ -189,6 +198,7 @@ Partial Class frmCustomisationPage
         'chkLaces
         '
         Me.chkLaces.AutoSize = True
+        Me.chkLaces.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkLaces.Location = New System.Drawing.Point(281, 108)
         Me.chkLaces.Name = "chkLaces"
         Me.chkLaces.Size = New System.Drawing.Size(53, 17)
@@ -199,6 +209,7 @@ Partial Class frmCustomisationPage
         'chkHeelBackCounter
         '
         Me.chkHeelBackCounter.AutoSize = True
+        Me.chkHeelBackCounter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkHeelBackCounter.Location = New System.Drawing.Point(281, 73)
         Me.chkHeelBackCounter.Name = "chkHeelBackCounter"
         Me.chkHeelBackCounter.Size = New System.Drawing.Size(53, 17)
@@ -209,6 +220,7 @@ Partial Class frmCustomisationPage
         'chkHeelTab
         '
         Me.chkHeelTab.AutoSize = True
+        Me.chkHeelTab.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkHeelTab.Location = New System.Drawing.Point(281, 38)
         Me.chkHeelTab.Name = "chkHeelTab"
         Me.chkHeelTab.Size = New System.Drawing.Size(53, 17)
@@ -239,6 +251,7 @@ Partial Class frmCustomisationPage
         'chkEyestay
         '
         Me.chkEyestay.AutoSize = True
+        Me.chkEyestay.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkEyestay.Location = New System.Drawing.Point(73, 108)
         Me.chkEyestay.Name = "chkEyestay"
         Me.chkEyestay.Size = New System.Drawing.Size(53, 17)
@@ -249,6 +262,7 @@ Partial Class frmCustomisationPage
         'chkVamp
         '
         Me.chkVamp.AutoSize = True
+        Me.chkVamp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkVamp.Location = New System.Drawing.Point(73, 73)
         Me.chkVamp.Name = "chkVamp"
         Me.chkVamp.Size = New System.Drawing.Size(59, 17)
@@ -259,6 +273,7 @@ Partial Class frmCustomisationPage
         'chkQuarter
         '
         Me.chkQuarter.AutoSize = True
+        Me.chkQuarter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.chkQuarter.Location = New System.Drawing.Point(73, 38)
         Me.chkQuarter.Name = "chkQuarter"
         Me.chkQuarter.Size = New System.Drawing.Size(53, 17)
@@ -327,6 +342,7 @@ Partial Class frmCustomisationPage
         '
         'mtbQuantity
         '
+        Me.mtbQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.mtbQuantity.Location = New System.Drawing.Point(66, 185)
         Me.mtbQuantity.Mask = "0000"
         Me.mtbQuantity.Name = "mtbQuantity"
@@ -337,6 +353,7 @@ Partial Class frmCustomisationPage
         'frmQuantity
         '
         Me.frmQuantity.AutoSize = True
+        Me.frmQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.frmQuantity.Location = New System.Drawing.Point(16, 189)
         Me.frmQuantity.Name = "frmQuantity"
         Me.frmQuantity.Size = New System.Drawing.Size(49, 13)
@@ -345,6 +362,7 @@ Partial Class frmCustomisationPage
         '
         'txtSize
         '
+        Me.txtSize.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtSize.Location = New System.Drawing.Point(16, 153)
         Me.txtSize.Name = "txtSize"
         Me.txtSize.Size = New System.Drawing.Size(100, 20)
@@ -353,6 +371,7 @@ Partial Class frmCustomisationPage
         'lblSize
         '
         Me.lblSize.AutoSize = True
+        Me.lblSize.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblSize.Location = New System.Drawing.Point(13, 137)
         Me.lblSize.Name = "lblSize"
         Me.lblSize.Size = New System.Drawing.Size(58, 13)
@@ -362,6 +381,7 @@ Partial Class frmCustomisationPage
         'rdoRetro
         '
         Me.rdoRetro.AutoSize = True
+        Me.rdoRetro.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.rdoRetro.Location = New System.Drawing.Point(66, 71)
         Me.rdoRetro.Name = "rdoRetro"
         Me.rdoRetro.Size = New System.Drawing.Size(58, 17)
@@ -373,6 +393,7 @@ Partial Class frmCustomisationPage
         'rdoVintage
         '
         Me.rdoVintage.AutoSize = True
+        Me.rdoVintage.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.rdoVintage.Location = New System.Drawing.Point(66, 107)
         Me.rdoVintage.Name = "rdoVintage"
         Me.rdoVintage.Size = New System.Drawing.Size(58, 17)
@@ -384,6 +405,7 @@ Partial Class frmCustomisationPage
         'rdoClassic
         '
         Me.rdoClassic.AutoSize = True
+        Me.rdoClassic.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.rdoClassic.Location = New System.Drawing.Point(66, 37)
         Me.rdoClassic.Name = "rdoClassic"
         Me.rdoClassic.Size = New System.Drawing.Size(58, 17)
@@ -424,6 +446,7 @@ Partial Class frmCustomisationPage
         '
         'grpPayment
         '
+        Me.grpPayment.BackColor = System.Drawing.Color.Transparent
         Me.grpPayment.Controls.Add(Me.mtbDate)
         Me.grpPayment.Controls.Add(Me.Label4)
         Me.grpPayment.Controls.Add(Me.mtbNumber)
@@ -432,15 +455,37 @@ Partial Class frmCustomisationPage
         Me.grpPayment.Controls.Add(Me.lblSecNum)
         Me.grpPayment.Controls.Add(Me.rdoDebit)
         Me.grpPayment.Controls.Add(Me.rdoCredit)
-        Me.grpPayment.Location = New System.Drawing.Point(28, 275)
+        Me.grpPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpPayment.Location = New System.Drawing.Point(35, 316)
         Me.grpPayment.Name = "grpPayment"
         Me.grpPayment.Size = New System.Drawing.Size(463, 108)
         Me.grpPayment.TabIndex = 10
         Me.grpPayment.TabStop = False
         Me.grpPayment.Text = "Payment Option:"
         '
+        'mtbDate
+        '
+        Me.mtbDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.mtbDate.Location = New System.Drawing.Point(369, 58)
+        Me.mtbDate.Mask = "00/00/0000"
+        Me.mtbDate.Name = "mtbDate"
+        Me.mtbDate.Size = New System.Drawing.Size(68, 20)
+        Me.mtbDate.TabIndex = 8
+        Me.mtbDate.ValidatingType = GetType(Date)
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label4.Location = New System.Drawing.Point(337, 61)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(33, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Date:"
+        '
         'mtbNumber
         '
+        Me.mtbNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.mtbNumber.Location = New System.Drawing.Point(143, 58)
         Me.mtbNumber.Mask = "000"
         Me.mtbNumber.Name = "mtbNumber"
@@ -450,6 +495,7 @@ Partial Class frmCustomisationPage
         '
         'mtbExDate
         '
+        Me.mtbExDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.mtbExDate.Location = New System.Drawing.Point(250, 58)
         Me.mtbExDate.Mask = "00/00/0000"
         Me.mtbExDate.Name = "mtbExDate"
@@ -460,6 +506,7 @@ Partial Class frmCustomisationPage
         'lblExpDate
         '
         Me.lblExpDate.AutoSize = True
+        Me.lblExpDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblExpDate.Location = New System.Drawing.Point(180, 61)
         Me.lblExpDate.Name = "lblExpDate"
         Me.lblExpDate.Size = New System.Drawing.Size(64, 13)
@@ -469,6 +516,7 @@ Partial Class frmCustomisationPage
         'lblSecNum
         '
         Me.lblSecNum.AutoSize = True
+        Me.lblSecNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblSecNum.Location = New System.Drawing.Point(49, 61)
         Me.lblSecNum.Name = "lblSecNum"
         Me.lblSecNum.Size = New System.Drawing.Size(88, 13)
@@ -478,6 +526,7 @@ Partial Class frmCustomisationPage
         'rdoDebit
         '
         Me.rdoDebit.AutoSize = True
+        Me.rdoDebit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.rdoDebit.Location = New System.Drawing.Point(183, 32)
         Me.rdoDebit.Name = "rdoDebit"
         Me.rdoDebit.Size = New System.Drawing.Size(75, 17)
@@ -489,6 +538,7 @@ Partial Class frmCustomisationPage
         'rdoCredit
         '
         Me.rdoCredit.AutoSize = True
+        Me.rdoCredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.rdoCredit.Location = New System.Drawing.Point(52, 32)
         Me.rdoCredit.Name = "rdoCredit"
         Me.rdoCredit.Size = New System.Drawing.Size(77, 17)
@@ -499,11 +549,13 @@ Partial Class frmCustomisationPage
         '
         'grpCost
         '
+        Me.grpCost.BackColor = System.Drawing.Color.Transparent
         Me.grpCost.Controls.Add(Me.Label2)
         Me.grpCost.Controls.Add(Me.txtCost)
         Me.grpCost.Controls.Add(Me.btnCalculate)
         Me.grpCost.Controls.Add(Me.btnPrint)
-        Me.grpCost.Location = New System.Drawing.Point(508, 275)
+        Me.grpCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.grpCost.Location = New System.Drawing.Point(515, 316)
         Me.grpCost.Name = "grpCost"
         Me.grpCost.Size = New System.Drawing.Size(183, 108)
         Me.grpCost.TabIndex = 11
@@ -513,7 +565,8 @@ Partial Class frmCustomisationPage
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(120, 33)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label2.Location = New System.Drawing.Point(113, 36)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 8
@@ -521,13 +574,15 @@ Partial Class frmCustomisationPage
         '
         'txtCost
         '
-        Me.txtCost.Location = New System.Drawing.Point(10, 31)
+        Me.txtCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.txtCost.Location = New System.Drawing.Point(6, 32)
         Me.txtCost.Name = "txtCost"
         Me.txtCost.Size = New System.Drawing.Size(100, 20)
         Me.txtCost.TabIndex = 7
         '
         'btnCalculate
         '
+        Me.btnCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalculate.Location = New System.Drawing.Point(10, 77)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
@@ -537,15 +592,17 @@ Partial Class frmCustomisationPage
         '
         'btnCustomise
         '
-        Me.btnCustomise.Location = New System.Drawing.Point(120, 192)
+        Me.btnCustomise.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnCustomise.Location = New System.Drawing.Point(113, 192)
         Me.btnCustomise.Name = "btnCustomise"
-        Me.btnCustomise.Size = New System.Drawing.Size(69, 23)
+        Me.btnCustomise.Size = New System.Drawing.Size(76, 23)
         Me.btnCustomise.TabIndex = 12
         Me.btnCustomise.Text = "Customise"
         Me.btnCustomise.UseVisualStyleBackColor = True
         '
         'grpCusDetails
         '
+        Me.grpCusDetails.BackColor = System.Drawing.Color.Transparent
         Me.grpCusDetails.Controls.Add(Me.lblSurname)
         Me.grpCusDetails.Controls.Add(Me.btnCustomise)
         Me.grpCusDetails.Controls.Add(Me.txtSurname)
@@ -557,7 +614,8 @@ Partial Class frmCustomisationPage
         Me.grpCusDetails.Controls.Add(Me.lblFName)
         Me.grpCusDetails.Controls.Add(Me.txtOrderID)
         Me.grpCusDetails.Controls.Add(Me.lblOrderID)
-        Me.grpCusDetails.Location = New System.Drawing.Point(28, 25)
+        Me.grpCusDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.grpCusDetails.Location = New System.Drawing.Point(35, 66)
         Me.grpCusDetails.Name = "grpCusDetails"
         Me.grpCusDetails.Size = New System.Drawing.Size(195, 244)
         Me.grpCusDetails.TabIndex = 13
@@ -567,6 +625,7 @@ Partial Class frmCustomisationPage
         'lblSurname
         '
         Me.lblSurname.AutoSize = True
+        Me.lblSurname.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblSurname.Location = New System.Drawing.Point(99, 73)
         Me.lblSurname.Name = "lblSurname"
         Me.lblSurname.Size = New System.Drawing.Size(52, 13)
@@ -575,6 +634,7 @@ Partial Class frmCustomisationPage
         '
         'txtSurname
         '
+        Me.txtSurname.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtSurname.Location = New System.Drawing.Point(102, 89)
         Me.txtSurname.Name = "txtSurname"
         Me.txtSurname.Size = New System.Drawing.Size(87, 20)
@@ -582,6 +642,7 @@ Partial Class frmCustomisationPage
         '
         'mtbPhoneNo
         '
+        Me.mtbPhoneNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.mtbPhoneNo.Location = New System.Drawing.Point(7, 195)
         Me.mtbPhoneNo.Mask = "(999) 000-0000"
         Me.mtbPhoneNo.Name = "mtbPhoneNo"
@@ -591,6 +652,7 @@ Partial Class frmCustomisationPage
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.Label3.Location = New System.Drawing.Point(13, 179)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(81, 13)
@@ -599,6 +661,7 @@ Partial Class frmCustomisationPage
         '
         'txtStreetAdd
         '
+        Me.txtStreetAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtStreetAdd.Location = New System.Drawing.Point(7, 143)
         Me.txtStreetAdd.Name = "txtStreetAdd"
         Me.txtStreetAdd.Size = New System.Drawing.Size(182, 20)
@@ -607,6 +670,7 @@ Partial Class frmCustomisationPage
         'lblStreetAdd
         '
         Me.lblStreetAdd.AutoSize = True
+        Me.lblStreetAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblStreetAdd.Location = New System.Drawing.Point(10, 126)
         Me.lblStreetAdd.Name = "lblStreetAdd"
         Me.lblStreetAdd.Size = New System.Drawing.Size(79, 13)
@@ -615,6 +679,7 @@ Partial Class frmCustomisationPage
         '
         'txtForeName
         '
+        Me.txtForeName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtForeName.Location = New System.Drawing.Point(7, 89)
         Me.txtForeName.Name = "txtForeName"
         Me.txtForeName.Size = New System.Drawing.Size(87, 20)
@@ -623,6 +688,7 @@ Partial Class frmCustomisationPage
         'lblFName
         '
         Me.lblFName.AutoSize = True
+        Me.lblFName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblFName.Location = New System.Drawing.Point(6, 73)
         Me.lblFName.Name = "lblFName"
         Me.lblFName.Size = New System.Drawing.Size(62, 13)
@@ -631,6 +697,7 @@ Partial Class frmCustomisationPage
         '
         'txtOrderID
         '
+        Me.txtOrderID.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.txtOrderID.Location = New System.Drawing.Point(7, 37)
         Me.txtOrderID.Name = "txtOrderID"
         Me.txtOrderID.ReadOnly = True
@@ -640,35 +707,21 @@ Partial Class frmCustomisationPage
         'lblOrderID
         '
         Me.lblOrderID.AutoSize = True
+        Me.lblOrderID.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblOrderID.Location = New System.Drawing.Point(7, 20)
         Me.lblOrderID.Name = "lblOrderID"
         Me.lblOrderID.Size = New System.Drawing.Size(50, 13)
         Me.lblOrderID.TabIndex = 0
         Me.lblOrderID.Text = "Order ID:"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(337, 61)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(33, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Date:"
-        '
-        'mtbDate
-        '
-        Me.mtbDate.Location = New System.Drawing.Point(369, 58)
-        Me.mtbDate.Mask = "00/00/0000"
-        Me.mtbDate.Name = "mtbDate"
-        Me.mtbDate.Size = New System.Drawing.Size(68, 20)
-        Me.mtbDate.TabIndex = 8
-        Me.mtbDate.ValidatingType = GetType(Date)
-        '
         'frmCustomisationPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(885, 412)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(885, 465)
         Me.Controls.Add(Me.grpCusDetails)
         Me.Controls.Add(Me.grpCost)
         Me.Controls.Add(Me.grpPayment)

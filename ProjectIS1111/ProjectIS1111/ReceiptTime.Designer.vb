@@ -27,6 +27,7 @@ Partial Class frmReceiptTime
         Me.lblYourStyle = New System.Windows.Forms.Label()
         Me.lblAddress = New System.Windows.Forms.Label()
         Me.tblTitles = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblServed = New System.Windows.Forms.Label()
         Me.lblCustomCharge = New System.Windows.Forms.Label()
         Me.lblSize = New System.Windows.Forms.Label()
         Me.lblCustomDes = New System.Windows.Forms.Label()
@@ -38,58 +39,57 @@ Partial Class frmReceiptTime
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblOrderID = New System.Windows.Forms.Label()
         Me.tblPrices = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblServed = New System.Windows.Forms.Label()
-        Me.tblPricesTitle = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblItem = New System.Windows.Forms.Label()
+        Me.txtccTotalADue = New System.Windows.Forms.TextBox()
+        Me.txtccQuantity = New System.Windows.Forms.TextBox()
+        Me.txtccTpShoe = New System.Windows.Forms.TextBox()
+        Me.txtccVAT = New System.Windows.Forms.TextBox()
+        Me.txtccPpShoe = New System.Windows.Forms.TextBox()
+        Me.txtccLogo = New System.Windows.Forms.TextBox()
+        Me.txtccText = New System.Windows.Forms.TextBox()
+        Me.txtccLaces = New System.Windows.Forms.TextBox()
+        Me.txtccHeelBC = New System.Windows.Forms.TextBox()
+        Me.txtccEyestay = New System.Windows.Forms.TextBox()
+        Me.txtccHeelTab = New System.Windows.Forms.TextBox()
+        Me.txtccVamp = New System.Windows.Forms.TextBox()
+        Me.txtccModel = New System.Windows.Forms.TextBox()
+        Me.lblTotalAmount = New System.Windows.Forms.Label()
+        Me.lblQuantity = New System.Windows.Forms.Label()
+        Me.lblTpShoe = New System.Windows.Forms.Label()
+        Me.lblVat = New System.Windows.Forms.Label()
+        Me.lblPpShoe = New System.Windows.Forms.Label()
+        Me.lblLogo = New System.Windows.Forms.Label()
+        Me.lblText = New System.Windows.Forms.Label()
+        Me.lblLaces = New System.Windows.Forms.Label()
+        Me.lblHBackC = New System.Windows.Forms.Label()
+        Me.lblHTab = New System.Windows.Forms.Label()
+        Me.lblEyestay = New System.Windows.Forms.Label()
+        Me.lblVamp = New System.Windows.Forms.Label()
         Me.lblModel = New System.Windows.Forms.Label()
         Me.lblQuarter = New System.Windows.Forms.Label()
-        Me.lblVamp = New System.Windows.Forms.Label()
-        Me.lblEyestay = New System.Windows.Forms.Label()
-        Me.lblHTab = New System.Windows.Forms.Label()
-        Me.lblHBackC = New System.Windows.Forms.Label()
-        Me.lblLaces = New System.Windows.Forms.Label()
-        Me.lblText = New System.Windows.Forms.Label()
-        Me.lblLogo = New System.Windows.Forms.Label()
-        Me.lblPpShoe = New System.Windows.Forms.Label()
-        Me.lblVat = New System.Windows.Forms.Label()
-        Me.lblTpShoe = New System.Windows.Forms.Label()
-        Me.lblQuantity = New System.Windows.Forms.Label()
-        Me.lblTotalAmount = New System.Windows.Forms.Label()
-        Me.lblUnitPrice = New System.Windows.Forms.Label()
         Me.txtccQuarter = New System.Windows.Forms.TextBox()
-        Me.txtccModel = New System.Windows.Forms.TextBox()
-        Me.txtccVamp = New System.Windows.Forms.TextBox()
-        Me.txtccHeelTab = New System.Windows.Forms.TextBox()
-        Me.txtccEyestay = New System.Windows.Forms.TextBox()
-        Me.txtccHeelBC = New System.Windows.Forms.TextBox()
-        Me.txtccLaces = New System.Windows.Forms.TextBox()
-        Me.txtccText = New System.Windows.Forms.TextBox()
-        Me.txtccLogo = New System.Windows.Forms.TextBox()
-        Me.txtccPpShoe = New System.Windows.Forms.TextBox()
-        Me.txtccVAT = New System.Windows.Forms.TextBox()
-        Me.txtccTpShoe = New System.Windows.Forms.TextBox()
-        Me.txtccQuantity = New System.Windows.Forms.TextBox()
-        Me.txtccTotalADue = New System.Windows.Forms.TextBox()
+        Me.tblPricesTitle = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblUnitPrice = New System.Windows.Forms.Label()
+        Me.lblItem = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.tblCusDes = New System.Windows.Forms.TableLayoutPanel()
+        Me.txtcdLogo = New System.Windows.Forms.TextBox()
+        Me.txtcdText = New System.Windows.Forms.TextBox()
+        Me.txtcdLaces = New System.Windows.Forms.TextBox()
+        Me.txtcdHBC = New System.Windows.Forms.TextBox()
+        Me.txtcdHT = New System.Windows.Forms.TextBox()
+        Me.txtcdEyestay = New System.Windows.Forms.TextBox()
+        Me.txtcdVamp = New System.Windows.Forms.TextBox()
+        Me.txtcdQuarter = New System.Windows.Forms.TextBox()
+        Me.txtcdModel = New System.Windows.Forms.TextBox()
+        Me.lblcdLogo = New System.Windows.Forms.Label()
+        Me.lblcdText = New System.Windows.Forms.Label()
+        Me.lblcdLaces = New System.Windows.Forms.Label()
+        Me.lblcdHBC = New System.Windows.Forms.Label()
+        Me.lblcdHTab = New System.Windows.Forms.Label()
+        Me.lblcdEyestay = New System.Windows.Forms.Label()
         Me.lblcdModel = New System.Windows.Forms.Label()
         Me.lblcdQuarter = New System.Windows.Forms.Label()
         Me.lblcdVamp = New System.Windows.Forms.Label()
-        Me.lblcdEyestay = New System.Windows.Forms.Label()
-        Me.lblcdHTab = New System.Windows.Forms.Label()
-        Me.lblcdHBC = New System.Windows.Forms.Label()
-        Me.lblcdLaces = New System.Windows.Forms.Label()
-        Me.lblcdText = New System.Windows.Forms.Label()
-        Me.lblcdLogo = New System.Windows.Forms.Label()
-        Me.txtcdModel = New System.Windows.Forms.TextBox()
-        Me.txtcdQuarter = New System.Windows.Forms.TextBox()
-        Me.txtcdVamp = New System.Windows.Forms.TextBox()
-        Me.txtcdEyestay = New System.Windows.Forms.TextBox()
-        Me.txtcdHT = New System.Windows.Forms.TextBox()
-        Me.txtcdHBC = New System.Windows.Forms.TextBox()
-        Me.txtcdLaces = New System.Windows.Forms.TextBox()
-        Me.txtcdText = New System.Windows.Forms.TextBox()
-        Me.txtcdLogo = New System.Windows.Forms.TextBox()
         Me.txtLogo = New System.Windows.Forms.TextBox()
         Me.txtShoeModel = New System.Windows.Forms.TextBox()
         Me.txtPhoneNo = New System.Windows.Forms.TextBox()
@@ -181,6 +181,17 @@ Partial Class frmReceiptTime
         Me.tblTitles.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.564103!))
         Me.tblTitles.Size = New System.Drawing.Size(295, 734)
         Me.tblTitles.TabIndex = 1
+        '
+        'lblServed
+        '
+        Me.lblServed.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblServed.AutoSize = True
+        Me.lblServed.Location = New System.Drawing.Point(118, 714)
+        Me.lblServed.Name = "lblServed"
+        Me.lblServed.Size = New System.Drawing.Size(59, 13)
+        Me.lblServed.TabIndex = 10
+        Me.lblServed.Text = "Served By:"
+        Me.lblServed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblCustomCharge
         '
@@ -347,41 +358,229 @@ Partial Class frmReceiptTime
         Me.tblPrices.Size = New System.Drawing.Size(387, 309)
         Me.tblPrices.TabIndex = 2
         '
-        'lblServed
+        'txtccTotalADue
         '
-        Me.lblServed.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblServed.AutoSize = True
-        Me.lblServed.Location = New System.Drawing.Point(118, 714)
-        Me.lblServed.Name = "lblServed"
-        Me.lblServed.Size = New System.Drawing.Size(59, 13)
-        Me.lblServed.TabIndex = 10
-        Me.lblServed.Text = "Served By:"
-        Me.lblServed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtccTotalADue.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccTotalADue.Location = New System.Drawing.Point(196, 289)
+        Me.txtccTotalADue.Name = "txtccTotalADue"
+        Me.txtccTotalADue.Size = New System.Drawing.Size(188, 20)
+        Me.txtccTotalADue.TabIndex = 5
         '
-        'tblPricesTitle
+        'txtccQuantity
         '
-        Me.tblPricesTitle.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.tblPricesTitle.ColumnCount = 2
-        Me.tblPricesTitle.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblPricesTitle.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblPricesTitle.Controls.Add(Me.lblUnitPrice, 1, 0)
-        Me.tblPricesTitle.Controls.Add(Me.lblItem, 0, 0)
-        Me.tblPricesTitle.Location = New System.Drawing.Point(303, 517)
-        Me.tblPricesTitle.Name = "tblPricesTitle"
-        Me.tblPricesTitle.RowCount = 1
-        Me.tblPricesTitle.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblPricesTitle.Size = New System.Drawing.Size(387, 20)
-        Me.tblPricesTitle.TabIndex = 3
+        Me.txtccQuantity.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccQuantity.Location = New System.Drawing.Point(196, 267)
+        Me.txtccQuantity.Name = "txtccQuantity"
+        Me.txtccQuantity.Size = New System.Drawing.Size(188, 20)
+        Me.txtccQuantity.TabIndex = 5
         '
-        'lblItem
+        'txtccTpShoe
         '
-        Me.lblItem.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblItem.AutoSize = True
-        Me.lblItem.Location = New System.Drawing.Point(83, 3)
-        Me.lblItem.Name = "lblItem"
-        Me.lblItem.Size = New System.Drawing.Size(27, 13)
-        Me.lblItem.TabIndex = 0
-        Me.lblItem.Text = "Item"
+        Me.txtccTpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccTpShoe.Location = New System.Drawing.Point(196, 245)
+        Me.txtccTpShoe.Name = "txtccTpShoe"
+        Me.txtccTpShoe.Size = New System.Drawing.Size(188, 20)
+        Me.txtccTpShoe.TabIndex = 5
+        '
+        'txtccVAT
+        '
+        Me.txtccVAT.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccVAT.Location = New System.Drawing.Point(196, 223)
+        Me.txtccVAT.Name = "txtccVAT"
+        Me.txtccVAT.Size = New System.Drawing.Size(188, 20)
+        Me.txtccVAT.TabIndex = 5
+        '
+        'txtccPpShoe
+        '
+        Me.txtccPpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccPpShoe.Location = New System.Drawing.Point(196, 201)
+        Me.txtccPpShoe.Name = "txtccPpShoe"
+        Me.txtccPpShoe.Size = New System.Drawing.Size(188, 20)
+        Me.txtccPpShoe.TabIndex = 5
+        '
+        'txtccLogo
+        '
+        Me.txtccLogo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccLogo.Location = New System.Drawing.Point(196, 179)
+        Me.txtccLogo.Name = "txtccLogo"
+        Me.txtccLogo.Size = New System.Drawing.Size(188, 20)
+        Me.txtccLogo.TabIndex = 5
+        '
+        'txtccText
+        '
+        Me.txtccText.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccText.Location = New System.Drawing.Point(196, 157)
+        Me.txtccText.Name = "txtccText"
+        Me.txtccText.Size = New System.Drawing.Size(188, 20)
+        Me.txtccText.TabIndex = 5
+        '
+        'txtccLaces
+        '
+        Me.txtccLaces.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccLaces.Location = New System.Drawing.Point(196, 135)
+        Me.txtccLaces.Name = "txtccLaces"
+        Me.txtccLaces.Size = New System.Drawing.Size(188, 20)
+        Me.txtccLaces.TabIndex = 5
+        '
+        'txtccHeelBC
+        '
+        Me.txtccHeelBC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccHeelBC.Location = New System.Drawing.Point(196, 113)
+        Me.txtccHeelBC.Name = "txtccHeelBC"
+        Me.txtccHeelBC.Size = New System.Drawing.Size(188, 20)
+        Me.txtccHeelBC.TabIndex = 5
+        '
+        'txtccEyestay
+        '
+        Me.txtccEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccEyestay.Location = New System.Drawing.Point(196, 69)
+        Me.txtccEyestay.Name = "txtccEyestay"
+        Me.txtccEyestay.Size = New System.Drawing.Size(188, 20)
+        Me.txtccEyestay.TabIndex = 5
+        '
+        'txtccHeelTab
+        '
+        Me.txtccHeelTab.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccHeelTab.Location = New System.Drawing.Point(196, 91)
+        Me.txtccHeelTab.Name = "txtccHeelTab"
+        Me.txtccHeelTab.Size = New System.Drawing.Size(188, 20)
+        Me.txtccHeelTab.TabIndex = 5
+        '
+        'txtccVamp
+        '
+        Me.txtccVamp.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccVamp.Location = New System.Drawing.Point(196, 47)
+        Me.txtccVamp.Name = "txtccVamp"
+        Me.txtccVamp.Size = New System.Drawing.Size(188, 20)
+        Me.txtccVamp.TabIndex = 5
+        '
+        'txtccModel
+        '
+        Me.txtccModel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccModel.Location = New System.Drawing.Point(196, 3)
+        Me.txtccModel.Name = "txtccModel"
+        Me.txtccModel.Size = New System.Drawing.Size(188, 20)
+        Me.txtccModel.TabIndex = 5
+        '
+        'lblTotalAmount
+        '
+        Me.lblTotalAmount.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTotalAmount.AutoSize = True
+        Me.lblTotalAmount.Location = New System.Drawing.Point(48, 291)
+        Me.lblTotalAmount.Name = "lblTotalAmount"
+        Me.lblTotalAmount.Size = New System.Drawing.Size(96, 13)
+        Me.lblTotalAmount.TabIndex = 4
+        Me.lblTotalAmount.Text = "Total Amount Due:"
+        '
+        'lblQuantity
+        '
+        Me.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblQuantity.AutoSize = True
+        Me.lblQuantity.Location = New System.Drawing.Point(72, 268)
+        Me.lblQuantity.Name = "lblQuantity"
+        Me.lblQuantity.Size = New System.Drawing.Size(49, 13)
+        Me.lblQuantity.TabIndex = 4
+        Me.lblQuantity.Text = "Quantity:"
+        '
+        'lblTpShoe
+        '
+        Me.lblTpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTpShoe.AutoSize = True
+        Me.lblTpShoe.Location = New System.Drawing.Point(56, 246)
+        Me.lblTpShoe.Name = "lblTpShoe"
+        Me.lblTpShoe.Size = New System.Drawing.Size(80, 13)
+        Me.lblTpShoe.TabIndex = 4
+        Me.lblTpShoe.Text = "Total per Shoe:"
+        '
+        'lblVat
+        '
+        Me.lblVat.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblVat.AutoSize = True
+        Me.lblVat.Location = New System.Drawing.Point(64, 224)
+        Me.lblVat.Name = "lblVat"
+        Me.lblVat.Size = New System.Drawing.Size(65, 13)
+        Me.lblVat.TabIndex = 4
+        Me.lblVat.Text = "VAT @ 23%"
+        '
+        'lblPpShoe
+        '
+        Me.lblPpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblPpShoe.AutoSize = True
+        Me.lblPpShoe.Location = New System.Drawing.Point(56, 202)
+        Me.lblPpShoe.Name = "lblPpShoe"
+        Me.lblPpShoe.Size = New System.Drawing.Size(80, 13)
+        Me.lblPpShoe.TabIndex = 4
+        Me.lblPpShoe.Text = "Price per Shoe:"
+        '
+        'lblLogo
+        '
+        Me.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblLogo.AutoSize = True
+        Me.lblLogo.Location = New System.Drawing.Point(79, 180)
+        Me.lblLogo.Name = "lblLogo"
+        Me.lblLogo.Size = New System.Drawing.Size(34, 13)
+        Me.lblLogo.TabIndex = 4
+        Me.lblLogo.Text = "Logo:"
+        '
+        'lblText
+        '
+        Me.lblText.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblText.AutoSize = True
+        Me.lblText.Location = New System.Drawing.Point(81, 158)
+        Me.lblText.Name = "lblText"
+        Me.lblText.Size = New System.Drawing.Size(31, 13)
+        Me.lblText.TabIndex = 4
+        Me.lblText.Text = "Text:"
+        '
+        'lblLaces
+        '
+        Me.lblLaces.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblLaces.AutoSize = True
+        Me.lblLaces.Location = New System.Drawing.Point(77, 136)
+        Me.lblLaces.Name = "lblLaces"
+        Me.lblLaces.Size = New System.Drawing.Size(39, 13)
+        Me.lblLaces.TabIndex = 4
+        Me.lblLaces.Text = "Laces:"
+        '
+        'lblHBackC
+        '
+        Me.lblHBackC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblHBackC.AutoSize = True
+        Me.lblHBackC.Location = New System.Drawing.Point(45, 114)
+        Me.lblHBackC.Name = "lblHBackC"
+        Me.lblHBackC.Size = New System.Drawing.Size(102, 13)
+        Me.lblHBackC.TabIndex = 4
+        Me.lblHBackC.Text = "Heel/Back Counter:"
+        '
+        'lblHTab
+        '
+        Me.lblHTab.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblHTab.AutoSize = True
+        Me.lblHTab.Location = New System.Drawing.Point(68, 92)
+        Me.lblHTab.Name = "lblHTab"
+        Me.lblHTab.Size = New System.Drawing.Size(56, 13)
+        Me.lblHTab.TabIndex = 4
+        Me.lblHTab.Text = "Heel/Tab:"
+        '
+        'lblEyestay
+        '
+        Me.lblEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblEyestay.AutoSize = True
+        Me.lblEyestay.Location = New System.Drawing.Point(73, 70)
+        Me.lblEyestay.Name = "lblEyestay"
+        Me.lblEyestay.Size = New System.Drawing.Size(47, 13)
+        Me.lblEyestay.TabIndex = 4
+        Me.lblEyestay.Text = "Eyestay:"
+        '
+        'lblVamp
+        '
+        Me.lblVamp.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblVamp.AutoSize = True
+        Me.lblVamp.Location = New System.Drawing.Point(78, 48)
+        Me.lblVamp.Name = "lblVamp"
+        Me.lblVamp.Size = New System.Drawing.Size(37, 13)
+        Me.lblVamp.TabIndex = 4
+        Me.lblVamp.Text = "Vamp:"
         '
         'lblModel
         '
@@ -403,125 +602,28 @@ Partial Class frmReceiptTime
         Me.lblQuarter.TabIndex = 1
         Me.lblQuarter.Text = "Quarter:"
         '
-        'lblVamp
+        'txtccQuarter
         '
-        Me.lblVamp.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblVamp.AutoSize = True
-        Me.lblVamp.Location = New System.Drawing.Point(78, 48)
-        Me.lblVamp.Name = "lblVamp"
-        Me.lblVamp.Size = New System.Drawing.Size(37, 13)
-        Me.lblVamp.TabIndex = 4
-        Me.lblVamp.Text = "Vamp:"
+        Me.txtccQuarter.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtccQuarter.Location = New System.Drawing.Point(196, 25)
+        Me.txtccQuarter.Name = "txtccQuarter"
+        Me.txtccQuarter.Size = New System.Drawing.Size(188, 20)
+        Me.txtccQuarter.TabIndex = 4
         '
-        'lblEyestay
+        'tblPricesTitle
         '
-        Me.lblEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblEyestay.AutoSize = True
-        Me.lblEyestay.Location = New System.Drawing.Point(73, 70)
-        Me.lblEyestay.Name = "lblEyestay"
-        Me.lblEyestay.Size = New System.Drawing.Size(47, 13)
-        Me.lblEyestay.TabIndex = 4
-        Me.lblEyestay.Text = "Eyestay:"
-        '
-        'lblHTab
-        '
-        Me.lblHTab.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblHTab.AutoSize = True
-        Me.lblHTab.Location = New System.Drawing.Point(68, 92)
-        Me.lblHTab.Name = "lblHTab"
-        Me.lblHTab.Size = New System.Drawing.Size(56, 13)
-        Me.lblHTab.TabIndex = 4
-        Me.lblHTab.Text = "Heel/Tab:"
-        '
-        'lblHBackC
-        '
-        Me.lblHBackC.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblHBackC.AutoSize = True
-        Me.lblHBackC.Location = New System.Drawing.Point(45, 114)
-        Me.lblHBackC.Name = "lblHBackC"
-        Me.lblHBackC.Size = New System.Drawing.Size(102, 13)
-        Me.lblHBackC.TabIndex = 4
-        Me.lblHBackC.Text = "Heel/Back Counter:"
-        '
-        'lblLaces
-        '
-        Me.lblLaces.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLaces.AutoSize = True
-        Me.lblLaces.Location = New System.Drawing.Point(77, 136)
-        Me.lblLaces.Name = "lblLaces"
-        Me.lblLaces.Size = New System.Drawing.Size(39, 13)
-        Me.lblLaces.TabIndex = 4
-        Me.lblLaces.Text = "Laces:"
-        '
-        'lblText
-        '
-        Me.lblText.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblText.AutoSize = True
-        Me.lblText.Location = New System.Drawing.Point(81, 158)
-        Me.lblText.Name = "lblText"
-        Me.lblText.Size = New System.Drawing.Size(31, 13)
-        Me.lblText.TabIndex = 4
-        Me.lblText.Text = "Text:"
-        '
-        'lblLogo
-        '
-        Me.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLogo.AutoSize = True
-        Me.lblLogo.Location = New System.Drawing.Point(79, 180)
-        Me.lblLogo.Name = "lblLogo"
-        Me.lblLogo.Size = New System.Drawing.Size(34, 13)
-        Me.lblLogo.TabIndex = 4
-        Me.lblLogo.Text = "Logo:"
-        '
-        'lblPpShoe
-        '
-        Me.lblPpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPpShoe.AutoSize = True
-        Me.lblPpShoe.Location = New System.Drawing.Point(56, 202)
-        Me.lblPpShoe.Name = "lblPpShoe"
-        Me.lblPpShoe.Size = New System.Drawing.Size(80, 13)
-        Me.lblPpShoe.TabIndex = 4
-        Me.lblPpShoe.Text = "Price per Shoe:"
-        '
-        'lblVat
-        '
-        Me.lblVat.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblVat.AutoSize = True
-        Me.lblVat.Location = New System.Drawing.Point(64, 224)
-        Me.lblVat.Name = "lblVat"
-        Me.lblVat.Size = New System.Drawing.Size(65, 13)
-        Me.lblVat.TabIndex = 4
-        Me.lblVat.Text = "VAT @ 23%"
-        '
-        'lblTpShoe
-        '
-        Me.lblTpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTpShoe.AutoSize = True
-        Me.lblTpShoe.Location = New System.Drawing.Point(56, 246)
-        Me.lblTpShoe.Name = "lblTpShoe"
-        Me.lblTpShoe.Size = New System.Drawing.Size(80, 13)
-        Me.lblTpShoe.TabIndex = 4
-        Me.lblTpShoe.Text = "Total per Shoe:"
-        '
-        'lblQuantity
-        '
-        Me.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblQuantity.AutoSize = True
-        Me.lblQuantity.Location = New System.Drawing.Point(72, 268)
-        Me.lblQuantity.Name = "lblQuantity"
-        Me.lblQuantity.Size = New System.Drawing.Size(49, 13)
-        Me.lblQuantity.TabIndex = 4
-        Me.lblQuantity.Text = "Quantity:"
-        '
-        'lblTotalAmount
-        '
-        Me.lblTotalAmount.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTotalAmount.AutoSize = True
-        Me.lblTotalAmount.Location = New System.Drawing.Point(48, 291)
-        Me.lblTotalAmount.Name = "lblTotalAmount"
-        Me.lblTotalAmount.Size = New System.Drawing.Size(96, 13)
-        Me.lblTotalAmount.TabIndex = 4
-        Me.lblTotalAmount.Text = "Total Amount Due:"
+        Me.tblPricesTitle.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.tblPricesTitle.ColumnCount = 2
+        Me.tblPricesTitle.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblPricesTitle.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblPricesTitle.Controls.Add(Me.lblUnitPrice, 1, 0)
+        Me.tblPricesTitle.Controls.Add(Me.lblItem, 0, 0)
+        Me.tblPricesTitle.Location = New System.Drawing.Point(303, 517)
+        Me.tblPricesTitle.Name = "tblPricesTitle"
+        Me.tblPricesTitle.RowCount = 1
+        Me.tblPricesTitle.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblPricesTitle.Size = New System.Drawing.Size(387, 20)
+        Me.tblPricesTitle.TabIndex = 3
         '
         'lblUnitPrice
         '
@@ -533,117 +635,15 @@ Partial Class frmReceiptTime
         Me.lblUnitPrice.TabIndex = 1
         Me.lblUnitPrice.Text = "Unit Price (€)"
         '
-        'txtccQuarter
+        'lblItem
         '
-        Me.txtccQuarter.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccQuarter.Location = New System.Drawing.Point(196, 25)
-        Me.txtccQuarter.Name = "txtccQuarter"
-        Me.txtccQuarter.Size = New System.Drawing.Size(188, 20)
-        Me.txtccQuarter.TabIndex = 4
-        '
-        'txtccModel
-        '
-        Me.txtccModel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccModel.Location = New System.Drawing.Point(196, 3)
-        Me.txtccModel.Name = "txtccModel"
-        Me.txtccModel.Size = New System.Drawing.Size(188, 20)
-        Me.txtccModel.TabIndex = 5
-        '
-        'txtccVamp
-        '
-        Me.txtccVamp.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccVamp.Location = New System.Drawing.Point(196, 47)
-        Me.txtccVamp.Name = "txtccVamp"
-        Me.txtccVamp.Size = New System.Drawing.Size(188, 20)
-        Me.txtccVamp.TabIndex = 5
-        '
-        'txtccHeelTab
-        '
-        Me.txtccHeelTab.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccHeelTab.Location = New System.Drawing.Point(196, 91)
-        Me.txtccHeelTab.Name = "txtccHeelTab"
-        Me.txtccHeelTab.Size = New System.Drawing.Size(188, 20)
-        Me.txtccHeelTab.TabIndex = 5
-        '
-        'txtccEyestay
-        '
-        Me.txtccEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccEyestay.Location = New System.Drawing.Point(196, 69)
-        Me.txtccEyestay.Name = "txtccEyestay"
-        Me.txtccEyestay.Size = New System.Drawing.Size(188, 20)
-        Me.txtccEyestay.TabIndex = 5
-        '
-        'txtccHeelBC
-        '
-        Me.txtccHeelBC.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccHeelBC.Location = New System.Drawing.Point(196, 113)
-        Me.txtccHeelBC.Name = "txtccHeelBC"
-        Me.txtccHeelBC.Size = New System.Drawing.Size(188, 20)
-        Me.txtccHeelBC.TabIndex = 5
-        '
-        'txtccLaces
-        '
-        Me.txtccLaces.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccLaces.Location = New System.Drawing.Point(196, 135)
-        Me.txtccLaces.Name = "txtccLaces"
-        Me.txtccLaces.Size = New System.Drawing.Size(188, 20)
-        Me.txtccLaces.TabIndex = 5
-        '
-        'txtccText
-        '
-        Me.txtccText.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccText.Location = New System.Drawing.Point(196, 157)
-        Me.txtccText.Name = "txtccText"
-        Me.txtccText.Size = New System.Drawing.Size(188, 20)
-        Me.txtccText.TabIndex = 5
-        '
-        'txtccLogo
-        '
-        Me.txtccLogo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccLogo.Location = New System.Drawing.Point(196, 179)
-        Me.txtccLogo.Name = "txtccLogo"
-        Me.txtccLogo.Size = New System.Drawing.Size(188, 20)
-        Me.txtccLogo.TabIndex = 5
-        '
-        'txtccPpShoe
-        '
-        Me.txtccPpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccPpShoe.Location = New System.Drawing.Point(196, 201)
-        Me.txtccPpShoe.Name = "txtccPpShoe"
-        Me.txtccPpShoe.Size = New System.Drawing.Size(188, 20)
-        Me.txtccPpShoe.TabIndex = 5
-        '
-        'txtccVAT
-        '
-        Me.txtccVAT.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccVAT.Location = New System.Drawing.Point(196, 223)
-        Me.txtccVAT.Name = "txtccVAT"
-        Me.txtccVAT.Size = New System.Drawing.Size(188, 20)
-        Me.txtccVAT.TabIndex = 5
-        '
-        'txtccTpShoe
-        '
-        Me.txtccTpShoe.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccTpShoe.Location = New System.Drawing.Point(196, 245)
-        Me.txtccTpShoe.Name = "txtccTpShoe"
-        Me.txtccTpShoe.Size = New System.Drawing.Size(188, 20)
-        Me.txtccTpShoe.TabIndex = 5
-        '
-        'txtccQuantity
-        '
-        Me.txtccQuantity.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccQuantity.Location = New System.Drawing.Point(196, 267)
-        Me.txtccQuantity.Name = "txtccQuantity"
-        Me.txtccQuantity.Size = New System.Drawing.Size(188, 20)
-        Me.txtccQuantity.TabIndex = 5
-        '
-        'txtccTotalADue
-        '
-        Me.txtccTotalADue.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtccTotalADue.Location = New System.Drawing.Point(196, 289)
-        Me.txtccTotalADue.Name = "txtccTotalADue"
-        Me.txtccTotalADue.Size = New System.Drawing.Size(188, 20)
-        Me.txtccTotalADue.TabIndex = 5
+        Me.lblItem.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblItem.AutoSize = True
+        Me.lblItem.Location = New System.Drawing.Point(83, 3)
+        Me.lblItem.Name = "lblItem"
+        Me.lblItem.Size = New System.Drawing.Size(27, 13)
+        Me.lblItem.TabIndex = 0
+        Me.lblItem.Text = "Item"
         '
         'TextBox1
         '
@@ -691,6 +691,138 @@ Partial Class frmReceiptTime
         Me.tblCusDes.Size = New System.Drawing.Size(387, 212)
         Me.tblCusDes.TabIndex = 5
         '
+        'txtcdLogo
+        '
+        Me.txtcdLogo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdLogo.Location = New System.Drawing.Point(196, 188)
+        Me.txtcdLogo.Name = "txtcdLogo"
+        Me.txtcdLogo.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdLogo.TabIndex = 6
+        '
+        'txtcdText
+        '
+        Me.txtcdText.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdText.Location = New System.Drawing.Point(196, 164)
+        Me.txtcdText.Name = "txtcdText"
+        Me.txtcdText.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdText.TabIndex = 6
+        '
+        'txtcdLaces
+        '
+        Me.txtcdLaces.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdLaces.Location = New System.Drawing.Point(196, 141)
+        Me.txtcdLaces.Name = "txtcdLaces"
+        Me.txtcdLaces.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdLaces.TabIndex = 6
+        '
+        'txtcdHBC
+        '
+        Me.txtcdHBC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdHBC.Location = New System.Drawing.Point(196, 118)
+        Me.txtcdHBC.Name = "txtcdHBC"
+        Me.txtcdHBC.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdHBC.TabIndex = 6
+        '
+        'txtcdHT
+        '
+        Me.txtcdHT.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdHT.Location = New System.Drawing.Point(196, 95)
+        Me.txtcdHT.Name = "txtcdHT"
+        Me.txtcdHT.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdHT.TabIndex = 6
+        '
+        'txtcdEyestay
+        '
+        Me.txtcdEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdEyestay.Location = New System.Drawing.Point(196, 72)
+        Me.txtcdEyestay.Name = "txtcdEyestay"
+        Me.txtcdEyestay.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdEyestay.TabIndex = 6
+        '
+        'txtcdVamp
+        '
+        Me.txtcdVamp.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdVamp.Location = New System.Drawing.Point(196, 49)
+        Me.txtcdVamp.Name = "txtcdVamp"
+        Me.txtcdVamp.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdVamp.TabIndex = 6
+        '
+        'txtcdQuarter
+        '
+        Me.txtcdQuarter.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdQuarter.Location = New System.Drawing.Point(196, 26)
+        Me.txtcdQuarter.Name = "txtcdQuarter"
+        Me.txtcdQuarter.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdQuarter.TabIndex = 6
+        '
+        'txtcdModel
+        '
+        Me.txtcdModel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtcdModel.Location = New System.Drawing.Point(196, 3)
+        Me.txtcdModel.Name = "txtcdModel"
+        Me.txtcdModel.Size = New System.Drawing.Size(188, 20)
+        Me.txtcdModel.TabIndex = 6
+        '
+        'lblcdLogo
+        '
+        Me.lblcdLogo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdLogo.AutoSize = True
+        Me.lblcdLogo.Location = New System.Drawing.Point(79, 191)
+        Me.lblcdLogo.Name = "lblcdLogo"
+        Me.lblcdLogo.Size = New System.Drawing.Size(34, 13)
+        Me.lblcdLogo.TabIndex = 6
+        Me.lblcdLogo.Text = "Logo:"
+        '
+        'lblcdText
+        '
+        Me.lblcdText.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdText.AutoSize = True
+        Me.lblcdText.Location = New System.Drawing.Point(81, 166)
+        Me.lblcdText.Name = "lblcdText"
+        Me.lblcdText.Size = New System.Drawing.Size(31, 13)
+        Me.lblcdText.TabIndex = 6
+        Me.lblcdText.Text = "Text:"
+        '
+        'lblcdLaces
+        '
+        Me.lblcdLaces.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdLaces.AutoSize = True
+        Me.lblcdLaces.Location = New System.Drawing.Point(77, 143)
+        Me.lblcdLaces.Name = "lblcdLaces"
+        Me.lblcdLaces.Size = New System.Drawing.Size(39, 13)
+        Me.lblcdLaces.TabIndex = 6
+        Me.lblcdLaces.Text = "Laces:"
+        '
+        'lblcdHBC
+        '
+        Me.lblcdHBC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdHBC.AutoSize = True
+        Me.lblcdHBC.Location = New System.Drawing.Point(45, 120)
+        Me.lblcdHBC.Name = "lblcdHBC"
+        Me.lblcdHBC.Size = New System.Drawing.Size(102, 13)
+        Me.lblcdHBC.TabIndex = 6
+        Me.lblcdHBC.Text = "Heel/Back Counter:"
+        '
+        'lblcdHTab
+        '
+        Me.lblcdHTab.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdHTab.AutoSize = True
+        Me.lblcdHTab.Location = New System.Drawing.Point(68, 97)
+        Me.lblcdHTab.Name = "lblcdHTab"
+        Me.lblcdHTab.Size = New System.Drawing.Size(56, 13)
+        Me.lblcdHTab.TabIndex = 6
+        Me.lblcdHTab.Text = "Heel/Tab:"
+        '
+        'lblcdEyestay
+        '
+        Me.lblcdEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblcdEyestay.AutoSize = True
+        Me.lblcdEyestay.Location = New System.Drawing.Point(73, 74)
+        Me.lblcdEyestay.Name = "lblcdEyestay"
+        Me.lblcdEyestay.Size = New System.Drawing.Size(47, 13)
+        Me.lblcdEyestay.TabIndex = 6
+        Me.lblcdEyestay.Text = "Eyestay:"
+        '
         'lblcdModel
         '
         Me.lblcdModel.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -720,138 +852,6 @@ Partial Class frmReceiptTime
         Me.lblcdVamp.Size = New System.Drawing.Size(37, 13)
         Me.lblcdVamp.TabIndex = 8
         Me.lblcdVamp.Text = "Vamp:"
-        '
-        'lblcdEyestay
-        '
-        Me.lblcdEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdEyestay.AutoSize = True
-        Me.lblcdEyestay.Location = New System.Drawing.Point(73, 74)
-        Me.lblcdEyestay.Name = "lblcdEyestay"
-        Me.lblcdEyestay.Size = New System.Drawing.Size(47, 13)
-        Me.lblcdEyestay.TabIndex = 6
-        Me.lblcdEyestay.Text = "Eyestay:"
-        '
-        'lblcdHTab
-        '
-        Me.lblcdHTab.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdHTab.AutoSize = True
-        Me.lblcdHTab.Location = New System.Drawing.Point(68, 97)
-        Me.lblcdHTab.Name = "lblcdHTab"
-        Me.lblcdHTab.Size = New System.Drawing.Size(56, 13)
-        Me.lblcdHTab.TabIndex = 6
-        Me.lblcdHTab.Text = "Heel/Tab:"
-        '
-        'lblcdHBC
-        '
-        Me.lblcdHBC.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdHBC.AutoSize = True
-        Me.lblcdHBC.Location = New System.Drawing.Point(45, 120)
-        Me.lblcdHBC.Name = "lblcdHBC"
-        Me.lblcdHBC.Size = New System.Drawing.Size(102, 13)
-        Me.lblcdHBC.TabIndex = 6
-        Me.lblcdHBC.Text = "Heel/Back Counter:"
-        '
-        'lblcdLaces
-        '
-        Me.lblcdLaces.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdLaces.AutoSize = True
-        Me.lblcdLaces.Location = New System.Drawing.Point(77, 143)
-        Me.lblcdLaces.Name = "lblcdLaces"
-        Me.lblcdLaces.Size = New System.Drawing.Size(39, 13)
-        Me.lblcdLaces.TabIndex = 6
-        Me.lblcdLaces.Text = "Laces:"
-        '
-        'lblcdText
-        '
-        Me.lblcdText.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdText.AutoSize = True
-        Me.lblcdText.Location = New System.Drawing.Point(81, 166)
-        Me.lblcdText.Name = "lblcdText"
-        Me.lblcdText.Size = New System.Drawing.Size(31, 13)
-        Me.lblcdText.TabIndex = 6
-        Me.lblcdText.Text = "Text:"
-        '
-        'lblcdLogo
-        '
-        Me.lblcdLogo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblcdLogo.AutoSize = True
-        Me.lblcdLogo.Location = New System.Drawing.Point(79, 191)
-        Me.lblcdLogo.Name = "lblcdLogo"
-        Me.lblcdLogo.Size = New System.Drawing.Size(34, 13)
-        Me.lblcdLogo.TabIndex = 6
-        Me.lblcdLogo.Text = "Logo:"
-        '
-        'txtcdModel
-        '
-        Me.txtcdModel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdModel.Location = New System.Drawing.Point(196, 3)
-        Me.txtcdModel.Name = "txtcdModel"
-        Me.txtcdModel.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdModel.TabIndex = 6
-        '
-        'txtcdQuarter
-        '
-        Me.txtcdQuarter.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdQuarter.Location = New System.Drawing.Point(196, 26)
-        Me.txtcdQuarter.Name = "txtcdQuarter"
-        Me.txtcdQuarter.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdQuarter.TabIndex = 6
-        '
-        'txtcdVamp
-        '
-        Me.txtcdVamp.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdVamp.Location = New System.Drawing.Point(196, 49)
-        Me.txtcdVamp.Name = "txtcdVamp"
-        Me.txtcdVamp.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdVamp.TabIndex = 6
-        '
-        'txtcdEyestay
-        '
-        Me.txtcdEyestay.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdEyestay.Location = New System.Drawing.Point(196, 72)
-        Me.txtcdEyestay.Name = "txtcdEyestay"
-        Me.txtcdEyestay.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdEyestay.TabIndex = 6
-        '
-        'txtcdHT
-        '
-        Me.txtcdHT.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdHT.Location = New System.Drawing.Point(196, 95)
-        Me.txtcdHT.Name = "txtcdHT"
-        Me.txtcdHT.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdHT.TabIndex = 6
-        '
-        'txtcdHBC
-        '
-        Me.txtcdHBC.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdHBC.Location = New System.Drawing.Point(196, 118)
-        Me.txtcdHBC.Name = "txtcdHBC"
-        Me.txtcdHBC.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdHBC.TabIndex = 6
-        '
-        'txtcdLaces
-        '
-        Me.txtcdLaces.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdLaces.Location = New System.Drawing.Point(196, 141)
-        Me.txtcdLaces.Name = "txtcdLaces"
-        Me.txtcdLaces.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdLaces.TabIndex = 6
-        '
-        'txtcdText
-        '
-        Me.txtcdText.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdText.Location = New System.Drawing.Point(196, 164)
-        Me.txtcdText.Name = "txtcdText"
-        Me.txtcdText.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdText.TabIndex = 6
-        '
-        'txtcdLogo
-        '
-        Me.txtcdLogo.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcdLogo.Location = New System.Drawing.Point(196, 188)
-        Me.txtcdLogo.Name = "txtcdLogo"
-        Me.txtcdLogo.Size = New System.Drawing.Size(188, 20)
-        Me.txtcdLogo.TabIndex = 6
         '
         'txtLogo
         '

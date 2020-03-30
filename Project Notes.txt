@@ -1,0 +1,43 @@
+Passing arguments into Parameters can be tricky.
+
+Parameters can have the same names as the arguments or they might have different names.
+
+For instance
+
+X = "VB"
+
+Call Language (X)
+
+ >>> X = VB here in the argument
+
+ 
+
+Sub Language (Y as String)
+
+>>Arguments are passed into paramters
+
+>>Our parameter has a different name to the argument. Previously it was X; now it is Y. It still holds the value "VB" even though the name changed.
+
+lstbox.Items.Add(Y " is the programming language I am using now") >>Anywhere Y appears now, the value "VB" will be shown.
+
+End Sub
+
+ 
+
+Now - in the example covered online:
+
+Wordplay(B)
+
+ >>> B = At this stage, B is Yvonne
+
+ 
+
+Sub Wordplay (ByVal X As String)
+
+>>Arguments are passed into paramters
+
+>>Our parameter has a different name to the argument. Previously it was B; now it is X. It still holds the value "Yvonne" even though the name changed.
+
+>> Anywhere now that X is referenced you say Yvonne instead.
+
+End Sub
